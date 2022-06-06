@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Local]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="environment" value="chrome"/>
+  <parameter name="config" value="local.conf.json"/>
+  <test name="LocalTest">
+    <parameter name="environment" value="chrome"/>
+    <parameter name="config" value="local.conf.json"/>
+    <classes>
+      <class name="com.browserstack.LocalTest"/>
+    </classes>
+  </test> <!-- LocalTest -->
+</suite> <!-- Failed suite [Local] -->

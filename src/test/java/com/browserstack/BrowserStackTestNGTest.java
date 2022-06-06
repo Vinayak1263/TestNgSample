@@ -30,13 +30,14 @@ public class BrowserStackTestNGTest {
 
        
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("browserName", "chrome");
-        HashMap<String, Object> browserstackOptions = new HashMap<String, Object>();
-        browserstackOptions.put("osVersion", "10.0");
-        browserstackOptions.put("deviceName", "Samsung Galaxy S20");
-        browserstackOptions.put("realMobile", "true");
-        browserstackOptions.put("local", "false");
-        capabilities.setCapability("bstack:options", browserstackOptions);
+capabilities.setCapability("browserName", "Chrome");
+capabilities.setCapability("browserVersion", "latest-beta");
+HashMap<String, Object> browserstackOptions = new HashMap<String, Object>();
+browserstackOptions.put("os", "Windows");
+browserstackOptions.put("osVersion", "10");
+browserstackOptions.put("local", "false");
+browserstackOptions.put("seleniumVersion", "3.14.0");
+capabilities.setCapability("bstack:options", browserstackOptions);
 
 
 //For HTTP

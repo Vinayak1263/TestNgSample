@@ -30,29 +30,18 @@ public class BrowserStackTestNGTest {
 
        
         DesiredCapabilities capabilities = new DesiredCapabilities();
-capabilities.setCapability("browserName", "Chrome");
-capabilities.setCapability("browserVersion", "latest-beta");
+
 HashMap<String, Object> browserstackOptions = new HashMap<String, Object>();
-browserstackOptions.put("os", "Windows");
-browserstackOptions.put("osVersion", "10");
+capabilities.setCapability("platformName", "android");
+capabilities.setCapability("platformVersion", "9.0");
+capabilities.setCapability("deviceName", "Google Pixel 3");
+capabilities.setCapability("app", "app_url");
 browserstackOptions.put("local", "false");
-browserstackOptions.put("seleniumVersion", "3.14.0");
 capabilities.setCapability("bstack:options", browserstackOptions);
 
 
-//For HTTP
 
-System.getProperties().put("http.proxyHost", "<HOST>");
-System.getProperties().put("http.proxyPort", "<PORT>");
-System.getProperties().put("http.proxyUser", "<USER>");
-System.getProperties().put("http.proxyPassword", "<PASSWORD>");
 
-//For HTTPS
-
-System.getProperties().put("https.proxyHost", "<HOST>");
-System.getProperties().put("https.proxyPort", "<PORT>");
-System.getProperties().put("https.proxyUser", "<USER>");
-System.getProperties().put("https.proxyPassword", "<PASSWORD>");
 
 
 
